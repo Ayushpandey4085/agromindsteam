@@ -1,0 +1,91 @@
+<%- include("partials/navbar.ejs") %>
+<head>
+	<title>register</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/css/register.css">
+<!--===============================================================================================-->
+</head>
+
+
+<body>
+
+    
+   
+   
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" action="/registerform" method="post">
+					<span class="login100-form-title p-b-10">
+						Register to continue
+					</span>
+                    <% if(typeof error != 'undefined'){%>
+                        <% error.forEach(error=>{%>
+                    <span class="login100-form-title p-b-20 message ">
+                        <%= error.message %>
+					</span>
+                    <% })} %>
+					
+					
+					<div class="wrap-input100" >
+						<input class="input100" type="text" name="name" required>
+						<span class="focus-input100"></span>
+						<span class="label-input100">Name</span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" required>
+						<span class="focus-input100"></span>
+						<span class="label-input100">Email</span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" name="password" id="pass" >
+						<span class="focus-input100"></span>
+						<span class="label-input100">Password</span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" name="passwordconfirm" id="pass2" >
+						<span class="focus-input100"></span>
+						<span class="label-input100">Confirm Password</span>
+					</div>
+
+					
+			
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							register
+						</button>
+					</div>
+
+             
+					
+
+				</form>
+                
+
+				<div class="login100-more" style="background-image: url('Assets/bg-01.jpeg');">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<%- include("partials/footer.ejs") %>
+	
+
+	
+	
+<!--===============================================================================================-->
+	<script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/javascript/login.js"></script>
+
+</body>

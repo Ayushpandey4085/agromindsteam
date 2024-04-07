@@ -1,0 +1,61 @@
+<%- include("partials/navbarloggedin.ejs") %>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Detection</title>
+    <link rel="stylesheet" href="css/diseaseDetection.css">
+
+<body>
+    <div class="uploadContainer container-fluid">
+        <div class="row">
+            <div class=" uploadImg">
+                <div id="imagePreview"></div>
+            </div>
+            <div class="uploadMain" style="background-image: url(Assets/upload.svg);">
+                <label for="uploadInput" class="custom-file-upload">
+                    <input type="file" id="uploadInput" accept="image/*">
+
+                </label>
+                
+            </div>
+    
+
+        </div>
+        
+    </div>
+    
+    <div class="buttonContainer container">
+        <button class="button btn btn-outline-primary ">Detect Disease</button>
+    </div>
+    
+    
+
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+    <div class="container diseaseContainer">
+        <div class="h1Cont1">
+            <h1>Detected:</h1>
+        </div>
+        <div class="h1Cont2">
+            <h1 id="disease"></h1>
+        </div>
+        
+        
+        
+    </div>
+
+    <div class="chatContainerMain">
+        <div id="chatContainer"></div>
+    </div>
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="javascript/disease-detection.js"></script>
+</body>
+
+
+
+

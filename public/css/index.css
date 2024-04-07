@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+#homefooter{
+    /* margin-top: 180%; */
+    position: relative !important;
+top: 110px !important;
+}
+/* .hero{
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: whitesmoke;
+} */
+
+
+.heading1  h1 {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    padding-left: 25%;
+    padding-right: 25%;
+
+} 
+.headingbuttons1{
+    display: flex;
+    justify-content: center;
+}
+.buttons1{
+    padding-top: 15px;
+    padding-bottom: 20px;    
+}
+
+.cro{
+    height: 500px;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+.cro img{
+    height: 500px;
+    border-radius: 40px;
+    width: 100%;
+    
+}
+
+.heroPara{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.para1{
+    width: 50%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.para1 p{
+    font-size: large;
+}
+
+
+.infoDiv{
+    padding-top: 3%;
+    
+}
+.infoDivimg img{
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    margin-left: 49%;
+    height:380px;
+    width: 400px;
+    
+}
+
+.infoContent{
+    background-color: aquamarine;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10% ;
+    height: 100%;
+    height:380px;
+    width: 400px;
+
+}
+ .infoContent{
+    padding-top: 15%;
+    font-style: italic;
+}
+
+.feature{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.featureHeading h2{
+    padding-top:10px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+.featureContent p{
+    font-size: 25px;
+    text-align: center;
+    padding: 0 50px 0px 50px;
+    
+}
+
+.cardDiv{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+    height: 18rem;
+    position: relative;
+}
+
+.cardDiv img{
+    height: 85px;
+    padding-top: 5px;
+    margin-top: 7%;
+    margin-bottom: 8%;
+}
+
+.cardDiv h5{
+    margin-bottom: 7%;
+}
+
+.info2{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.heading2{
+    font-size: larger;
+    padding-bottom: 2%;
+}
+
+.para2{
+    font-size: 20px;
+    text-justify: newspaper;
+    padding: 0 6% 2% 6%;
+
+}
+
+.cardinfo{
+    text-align: left;
+}
+.cardinfo p{
+    padding: 2% 0 3% 0;
+}
+.cardimg{
+    height: 200px;
+    
+}
+
+.commentCont{
+   margin: 5% 0 5% 0;
+}
+.commentCont h2{
+    padding-top: 14%;
+}
+
+.commentAuthor{
+    display: flex;
+}
+
+.commentAuthor img{
+    height: 50px;
+    width: 50px;
+    margin-top: 10%;
+}
+.commentAuthor .degignation{
+    padding-left: 15%;
+    padding-top: 10%;
+}
+
+
+@media (max-width:1175.5px) {
+    .info2{
+        margin-top:25%;
+    }
+}
+
+@media (max-width:991.5px){
+    .info2{
+        margin-top: 35%;
+    }
+    .infoDivimg img{
+        margin-left: 0;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 0;
+        margin-left: 0;
+        width: 70%;
+    }
+    .infoContent{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10%;
+        margin-left: 15%;
+        width: 70%;
+    }
+    .cardinfoclass{
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width:624px) {
+    .cro{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .innercard{
+        margin-left: 13%
+    }
+    .info2{
+        margin-top: 185%;
+    }
+    .infoDivimg img{
+        height: 300px;
+    }
+    .infoContent{
+        height: 300px;
+    }
+    .infoContent h4{
+        font-size: large;
+    }
+    .cardinfoclass{
+        margin-bottom: 2%;
+    }
+
+    .footer{
+        margin-top: 180%;
+        position: relative !important;
+        top: 110px !important;
+        
+    }
+
+}

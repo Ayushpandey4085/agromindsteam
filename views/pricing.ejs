@@ -1,0 +1,227 @@
+<!-- <div class="priceHero" style="margin-left: 7%; margin-right: 7%;"> -->
+  <% if(logincheck){ %>
+    <%- include("partials/navbarloggedin.ejs") %>
+    <% }else{ %>
+      <%- include("partials/navbar.ejs") %>
+      <% } %>
+
+<head>
+    <title>pricing agrominds</title>
+    <link rel="stylesheet" href="/css/pricing.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+  
+
+    
+
+    <div class="container-fluid" style="background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);">
+        <div class="container p-5">
+          <% if(logincheck){ %>
+          <h1>Your are using <%= subscription %> subscription</h1>
+          <% }%>
+            
+           
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card h-100 shadow-lg">
+                <div class="card-body">
+                  <div class="text-center p-3">
+                    <h5 class="card-title">Free</h5>
+                    <small>Individual</small>
+                    <br><br>
+                    <span class="h2">₹0</span>/year
+                    <br><br>
+                  </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>Device Data</li>
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>Customer support</li>
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>Hardware support</li>
+  
+                </ul>
+
+                <% if(logincheck){ %>
+                  <div class="card-body text-center">
+                    <a href="/free"> <button class="btn btn-outline-primary btn-lg" style="border-radius:30px">Select</button></a>
+                  </div>
+                  <% }else{ %>
+                    <div class="card-body text-center">
+                      
+                      <form class="pay-form">
+                        <input type="hidden" name="name" value="Free">
+                        <input type="hidden" name="amount" value="0">
+                        <input type="hidden" name="description" value="Shirt Buying">
+                      
+                        <a href="/login"> <button class="btn btn-outline-primary btn-lg" style="border-radius:30px" type="submit" value="Pay Now">Select</button></a>
+                      </form>
+                    </div>
+                    <% } %>
+
+                
+
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card h-100 shadow-lg">
+                <div class="card-body">
+                  <div class="text-center p-3">
+                    <h5 class="card-title">Standard</h5>
+                    <small>Indiviudal User</small>
+                    <br><br>
+                    <span class="h2">₹499</span>/year 
+                    <br><br>
+                  </div>
+                  
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>Device data</li>
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg> Disease Detection</li>
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>Hardware Support</li>
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>Customer Support</li>
+                </ul>
+                <% if(logincheck){ %>
+                  <div class="card-body text-center">
+                    <form class="pay-form">
+                      <input type="hidden" name="name" value="Standard">
+                      <input type="hidden" name="amount" value="499">
+                      <input type="hidden" name="description" value="Standard pack">
+                    
+                      <a href="/standerd"> <button class="btn btn-outline-primary btn-lg" style="border-radius:30px" type="submit" value="Pay Now">Select</button></a>
+                    </form>
+      
+                  </div>
+                  <% }else{ %>
+                    <div class="card-body text-center">
+                      <a href="/login"> <button class="btn btn-outline-primary btn-lg" style="border-radius:30px">Select</button></a>
+                    </div>
+                    <% } %>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card h-100 shadow-lg">
+                <div class="card-body">
+                  <div class="text-center p-3">
+                    <h5 class="card-title">Premium</h5>
+                    <small>For Businesses</small>
+                    <br><br>
+                    <span class="h2">₹999</span>/year
+                    <br><br>
+                  </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>Device data</li>
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg> Disease Detection</li>
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg> Ai Based Get Help</li>
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>Hardware Support</li>
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>Customer Support</li>
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                  </svg>Api Support</li>
+                </ul>
+                <% if(logincheck){ %>
+                  <div class="card-body text-center">
+                    <form class="pay-form">
+                      <input type="hidden" name="name" value="Premium">
+                      <input type="hidden" name="amount" value="999">
+                      <input type="hidden" name="description" value="Premium pack">
+                    
+                      <a href="/premium"> <button class="btn btn-outline-primary btn-lg" style="border-radius:30px" type="submit" value="Pay Now">Select</button></a>
+                    </form>
+                  </div>
+                  <% }else{ %>
+                    <div class="card-body text-center">
+                      <a href="/login"> <button class="btn btn-outline-primary btn-lg" style="border-radius:30px">Select</button></a>
+                    </div>
+                    <% } %>
+              </div>
+            </div>
+          </div>    
+        </div>
+<%- include("partials/footer.ejs") %>
+</div>
+    
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+
+  $(document).ready(function(){
+    $('.pay-form').submit(function(e){
+      e.preventDefault();
+  
+      var formData = $(this).serialize();
+  
+      $.ajax({
+        url:"/createOrder",
+        type:"POST",
+        data: formData,
+        success:function(res){
+          if(res.success){
+           
+            var options = {
+              "key": ""+"<%=key_id%>"+"",
+              "amount": ""+res.amount+"",
+              "currency": "INR",
+              "name": ""+res.product_name+"",
+              "description": ""+res.description+"",
+              "image": "https://dummyimage.com/600x400/000/fff",
+              "order_id": ""+res.order_id+"",
+              "handler": function (response){
+                alert("Payment Succeeded");
+                // window.open("/","_self")
+              },
+              "prefill": {
+                "contact":""+res.contact+"",
+                "name": ""+res.name+"",
+                "email": ""+res.email+""
+              },
+              "notes" : {
+                "description":""+res.description+""
+              },
+              "theme": {
+                "color": "#2300a3"
+              }
+            };
+            var razorpayObject = new Razorpay(options);
+            razorpayObject.on('payment.failed', function (response){
+                alert("Payment Failed");
+            });
+            razorpayObject.open();
+          }
+          else{
+            alert(res.msg);
+          }
+        }
+      })
+  
+    });
+  });
+  
+  </script>
+  
+</body>

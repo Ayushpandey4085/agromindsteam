@@ -1,0 +1,54 @@
+<%- include("partials/navbarloggedin") %>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Device Data</title>
+        <link rel="stylesheet" href="css/device.css">
+
+    </head>
+
+    <body>
+        <div class="heading" style="background:black;">
+            <h1>Your Device Status</h1>
+        </div>
+        <div class="container">
+            
+            <div class="row">
+
+            <!-- Container for Temperature data and iframe -->
+            <div class="col-lg-6 pumpStat" id="temperatureContainer">
+                <h2>Pump Status</h2>
+                <div id="iframeContainer1"></div>
+            </div>
+            
+            <div class="col-lg-6 temperatureStat" id="temperatureContainer">
+                <h2>Current Data:</h2>
+                <div id="iframeContainer2"></div>
+                <p id="temperature">Temperature: Loading...</p>
+            </div>
+
+            <!-- Container for Humidity data and iframe -->
+            <div class="col-lg-6 humidityStat" id="humidityContainer">
+                <div id="iframeContainer3"></div>
+                <p id="humidity">Humidity: Loading...</p>
+            </div>
+
+            <!-- Container for Soil Moisture data and iframe -->
+            <div class="col-lg-6 soilMoistureStat" id="soilMoistureContainer">
+                <div id="iframeContainer4"></div>
+                <p id="soilMoisture">Soil Moisture: Loading...</p>
+            </div>
+            </div>
+
+
+
+            <script src="javascript/device.js"></script>
+    </body>
+
+
+    </html>
+
+    

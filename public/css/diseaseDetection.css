@@ -1,0 +1,102 @@
+body{
+    background-color: black;
+}
+
+.uploadContainer{
+    display: grid;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 5%;
+    
+}
+.row{
+    justify-content: center;
+    gap: 50px !important;
+
+}
+
+.uploadImg{
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    padding-left: 0;
+}
+
+.uploadMain{
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 10px;
+}
+.uploadMain>#uploadInput{
+    margin-top: 50%;
+    margin-left: 20%;
+        border: none;
+        outline: none; /* Optional: removes outline when focused */
+    
+    
+
+}
+.uploadMain>imput{
+    color: red;
+}
+
+#imagePreview > img{
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    
+}
+
+
+.custom-file-upload {
+    border: none;
+    width: 90%;
+    height: 100%;
+    /* display: inline-block; */
+    /* padding: 6px 12px; */
+    cursor: pointer;
+    /* font-size: 16px; */
+
+    /* border-radius: 4px; */
+}
+  
+  .custom-file-upload input[type=file] {
+    display: none;
+  
+  }
+
+  .buttonContainer{
+    display: grid;
+    grid-row: auto;
+    justify-content: center;
+    margin-top: 3%;
+  }
+
+  .diseaseContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    color: green;
+    gap: 7px;
+  }
+
+  .chatContainerMain{
+    padding-left: 7%;
+    padding-right: 7%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+  }
+
+  /* .chatContainer #chatContainer >p{
+    color: white;
+  } */

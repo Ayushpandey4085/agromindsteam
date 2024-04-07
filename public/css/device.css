@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:black;
+    text-align: center;
+}
+
+.heading{
+    padding-top: 20px;
+}
+
+.container {
+    background:black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+    padding-top: 30px;
+    box-shadow: aquamarine;
+    
+}
+
+
+
+h1, h2 {
+    color: #ffffff;
+}
+
+p {
+    color: #555;
+}
+
+.pumpStat{
+    border: solid;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(217, 226, 217),rgb(114, 221, 198));
+}
+
+.pumpStatZoom{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(rgb(217, 226, 217),rgb(114, 221, 198));
+}
+
+.temperatureStat{
+    border: solid;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(217, 226, 217),rgb(114, 221, 198));
+
+}
+.humidityStat{
+    border: solid;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(217, 226, 217),rgb(114, 221, 198));
+
+}
+.soilMoistureStat{
+    border: solid;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(217, 226, 217),rgb(114, 221, 198));
+
+}
